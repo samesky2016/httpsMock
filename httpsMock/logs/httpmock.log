@@ -1,0 +1,478 @@
+2018-04-28 11:34:51.664 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.2.4.Final
+2018-04-28 11:34:51.704 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36fc695d: startup date [Sat Apr 28 11:34:51 CST 2018]; root of context hierarchy
+2018-04-28 11:34:53.050 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[87] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-04-28 11:34:53.062 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service Tomcat
+2018-04-28 11:34:53.064 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-04-28 11:34:53.158 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-04-28 11:34:53.158 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1457 ms
+2018-04-28 11:34:53.287 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-28 11:34:53.289 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-28 11:34:53.289 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-28 11:34:53.289 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-28 11:34:53.289 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-28 11:34:53.547 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36fc695d: startup date [Sat Apr 28 11:34:51 CST 2018]; root of context hierarchy
+2018-04-28 11:34:53.606 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-04-28 11:34:53.607 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-04-28 11:34:53.608 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-04-28 11:34:53.608 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:34:53.608 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:34:53.611 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:34:53.612 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-28 11:34:53.641 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:34:53.642 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:34:53.684 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:34:54.091 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-04-28 11:34:54.106 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-04-28 11:34:54.115 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler [https-jsse-nio-8443]
+2018-04-28 11:34:54.678 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 11:34:54.688 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-04-28 11:34:54.690 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 11:34:54.691 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler [http-nio-8088]
+2018-04-28 11:34:54.700 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[185] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-04-28 11:35:08.528 [https-jsse-nio-8443-exec-4] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-28 11:35:08.529 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-28 11:35:08.546 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-04-28 11:36:40.740 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.2.4.Final
+2018-04-28 11:36:40.742 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[582] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36fc695d: startup date [Sat Apr 28 11:36:40 CST 2018]; root of context hierarchy
+2018-04-28 11:36:42.178 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[87] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-04-28 11:36:42.190 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service Tomcat
+2018-04-28 11:36:42.191 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-04-28 11:36:42.288 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-04-28 11:36:42.289 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1551 ms
+2018-04-28 11:36:42.455 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-28 11:36:42.457 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-28 11:36:42.458 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-28 11:36:42.458 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-28 11:36:42.458 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-28 11:36:42.768 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36fc695d: startup date [Sat Apr 28 11:36:40 CST 2018]; root of context hierarchy
+2018-04-28 11:36:42.828 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:36:42.829 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-04-28 11:36:42.829 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-04-28 11:36:42.829 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-04-28 11:36:42.830 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:36:42.832 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:36:42.833 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-28 11:36:42.860 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:36:42.861 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:36:42.893 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:36:43.271 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-04-28 11:36:43.287 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-04-28 11:36:43.295 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler [https-jsse-nio-8443]
+2018-04-28 11:36:43.665 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 11:36:43.674 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-04-28 11:36:43.676 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 11:36:43.677 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler [http-nio-8088]
+2018-04-28 11:36:43.686 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[185] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-04-28 11:36:47.753 [https-jsse-nio-8443-exec-4] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-28 11:36:47.753 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-28 11:36:47.768 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-04-28 11:43:37.377 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.2.4.Final
+2018-04-28 11:43:37.396 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[581] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@411f53a0: startup date [Sat Apr 28 11:43:37 CST 2018]; root of context hierarchy
+2018-04-28 11:43:39.081 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[88] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-04-28 11:43:39.094 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service Tomcat
+2018-04-28 11:43:39.095 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-04-28 11:43:39.267 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-04-28 11:43:39.268 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1875 ms
+2018-04-28 11:43:39.426 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-28 11:43:39.428 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-28 11:43:39.428 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-28 11:43:39.429 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-28 11:43:39.429 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-28 11:43:39.682 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@411f53a0: startup date [Sat Apr 28 11:43:37 CST 2018]; root of context hierarchy
+2018-04-28 11:43:39.752 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:43:39.753 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-04-28 11:43:39.753 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-04-28 11:43:39.753 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-04-28 11:43:39.754 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:43:39.757 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:43:39.757 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-28 11:43:39.784 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[354] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:43:39.784 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[354] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:43:39.817 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[354] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:43:40.267 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-04-28 11:43:40.299 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-04-28 11:43:40.320 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler [https-jsse-nio-8443]
+2018-04-28 11:43:40.732 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 11:43:40.755 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-04-28 11:43:40.757 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 11:43:40.757 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler [http-nio-8088]
+2018-04-28 11:43:40.774 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[186] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-04-28 11:43:50.127 [https-jsse-nio-8443-exec-4] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-28 11:43:50.128 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-28 11:43:50.144 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-04-28 11:44:37.776 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Sat Apr 28 11:44:37 CST 2018]; root of context hierarchy
+2018-04-28 11:44:37.892 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-04-28 11:44:39.977 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-04-28 11:44:40.001 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-04-28 11:44:40.003 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-28 11:44:40.257 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-04-28 11:44:40.257 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 2484 ms
+2018-04-28 11:44:40.465 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-28 11:44:40.467 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-28 11:44:40.468 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-28 11:44:40.468 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-28 11:44:40.469 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-28 11:44:40.933 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Sat Apr 28 11:44:37 CST 2018]; root of context hierarchy
+2018-04-28 11:44:41.044 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:44:41.045 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-04-28 11:44:41.046 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-04-28 11:44:41.046 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-04-28 11:44:41.046 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:44:41.049 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-28 11:44:41.049 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-28 11:44:41.071 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:44:41.071 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:44:41.117 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 11:44:41.522 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-04-28 11:44:41.573 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-04-28 11:44:41.589 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-04-28 11:44:42.078 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 11:44:42.115 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-04-28 11:44:42.117 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 11:44:42.117 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8088"]
+2018-04-28 11:44:42.140 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-04-28 11:44:48.005 [https-jsse-nio-8443-exec-7] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-28 11:44:48.006 [https-jsse-nio-8443-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-28 11:44:48.032 [https-jsse-nio-8443-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-04-28 13:43:05.294 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a01e23: startup date [Sat Apr 28 13:43:05 CST 2018]; root of context hierarchy
+2018-04-28 13:43:05.381 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-04-28 13:43:06.522 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-04-28 13:43:06.534 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-04-28 13:43:06.535 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-28 13:43:06.629 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-04-28 13:43:06.630 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1339 ms
+2018-04-28 13:43:06.793 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-28 13:43:06.795 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-28 13:43:06.796 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-28 13:43:06.796 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-28 13:43:06.796 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-28 13:43:07.116 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a01e23: startup date [Sat Apr 28 13:43:05 CST 2018]; root of context hierarchy
+2018-04-28 13:43:07.182 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-04-28 13:43:07.183 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-04-28 13:43:07.184 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-04-28 13:43:07.184 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-04-28 13:43:07.184 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-04-28 13:43:07.187 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-28 13:43:07.188 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-28 13:43:07.211 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 13:43:07.212 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 13:43:07.245 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 13:43:07.652 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-04-28 13:43:07.669 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-04-28 13:43:07.679 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-04-28 13:43:08.167 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 13:43:08.179 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-04-28 13:43:08.183 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 13:43:08.183 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8088"]
+2018-04-28 13:43:08.193 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-04-28 13:43:19.881 [https-jsse-nio-8443-exec-6] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-28 13:43:19.882 [https-jsse-nio-8443-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-28 13:43:19.899 [https-jsse-nio-8443-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-04-28 13:44:37.820 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-04-28 13:44:37.841 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Sat Apr 28 13:44:37 CST 2018]; root of context hierarchy
+2018-04-28 13:44:39.214 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-04-28 13:44:39.224 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-04-28 13:44:39.225 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-28 13:44:39.316 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-04-28 13:44:39.316 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1478 ms
+2018-04-28 13:44:39.450 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-28 13:44:39.452 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-28 13:44:39.453 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-28 13:44:39.453 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-28 13:44:39.453 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-28 13:44:39.734 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Sat Apr 28 13:44:37 CST 2018]; root of context hierarchy
+2018-04-28 13:44:39.793 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-04-28 13:44:39.794 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-04-28 13:44:39.794 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-04-28 13:44:39.794 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-04-28 13:44:39.795 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-04-28 13:44:39.798 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-28 13:44:39.798 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-28 13:44:39.821 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 13:44:39.821 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 13:44:39.853 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 13:44:40.286 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-04-28 13:44:40.305 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-04-28 13:44:40.337 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-04-28 13:44:40.831 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 13:44:40.847 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-04-28 13:44:40.851 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-04-28 13:44:40.852 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8088"]
+2018-04-28 13:44:40.871 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-05-15 09:21:55.611 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-05-15 09:21:55.784 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Tue May 15 09:21:55 CST 2018]; root of context hierarchy
+2018-05-15 09:21:57.951 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-05-15 09:21:57.984 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-05-15 09:21:58.000 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-05-15 09:21:58.163 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-05-15 09:21:58.163 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 2382 ms
+2018-05-15 09:21:58.350 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-15 09:21:58.352 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-15 09:21:58.353 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-15 09:21:58.353 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-15 09:21:58.353 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-15 09:21:58.756 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Tue May 15 09:21:55 CST 2018]; root of context hierarchy
+2018-05-15 09:21:58.850 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-05-15 09:21:58.851 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-05-15 09:21:58.851 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-05-15 09:21:58.852 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-05-15 09:21:58.852 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-05-15 09:21:58.854 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-15 09:21:58.855 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-15 09:21:58.877 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 09:21:58.877 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 09:21:58.907 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 09:21:59.618 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-05-15 09:21:59.662 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-05-15 09:21:59.687 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-05-15 09:22:00.757 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-05-15 09:22:00.789 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-05-15 09:22:00.791 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-05-15 09:22:00.791 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8088"]
+2018-05-15 09:22:00.811 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-05-15 09:22:50.382 [https-jsse-nio-8443-exec-5] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-15 09:22:50.383 [https-jsse-nio-8443-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-15 09:22:50.424 [https-jsse-nio-8443-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-07-12 17:01:58.906 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Thu Jul 12 17:01:58 CST 2018]; root of context hierarchy
+2018-07-12 17:01:59.739 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:02:08.769 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-07-12 17:02:08.919 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-07-12 17:02:08.928 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-12 17:02:09.399 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-07-12 17:02:09.400 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 10536 ms
+2018-07-12 17:02:09.663 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-12 17:02:09.666 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-12 17:02:09.666 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-12 17:02:09.666 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-12 17:02:09.667 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-12 17:02:11.258 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Thu Jul 12 17:01:58 CST 2018]; root of context hierarchy
+2018-07-12 17:02:11.525 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:02:11.526 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-07-12 17:02:11.526 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-07-12 17:02:11.527 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-07-12 17:02:11.527 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:02:11.529 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:02:11.530 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-12 17:02:11.582 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:02:11.582 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:02:11.640 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:02:13.073 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-07-12 17:02:13.180 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:02:13.275 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:02:17.550 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-07-12 17:02:17.693 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-07-12 17:02:17.696 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-07-12 17:02:17.696 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8088"]
+2018-07-12 17:02:17.735 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-07-12 17:02:32.482 [https-jsse-nio-8443-exec-8] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-12 17:02:32.482 [https-jsse-nio-8443-exec-8] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-12 17:02:32.508 [https-jsse-nio-8443-exec-8] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-07-12 17:03:37.851 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cc4cdb9: startup date [Thu Jul 12 17:03:37 CST 2018]; root of context hierarchy
+2018-07-12 17:03:43.862 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:04:37.028 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-07-12 17:04:37.243 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-07-12 17:04:37.268 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-12 17:04:41.454 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-07-12 17:04:41.462 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 63667 ms
+2018-07-12 17:04:49.926 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-12 17:04:49.956 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-12 17:04:49.965 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-12 17:04:49.973 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-12 17:04:49.981 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-12 17:05:09.867 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cc4cdb9: startup date [Thu Jul 12 17:03:37 CST 2018]; root of context hierarchy
+2018-07-12 17:05:12.338 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:05:12.373 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-07-12 17:05:12.404 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-07-12 17:05:12.433 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-07-12 17:05:12.462 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:05:12.684 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:05:12.710 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-12 17:05:14.724 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:05:14.731 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:05:17.439 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:06:00.149 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28194a50: startup date [Thu Jul 12 17:06:00 CST 2018]; root of context hierarchy
+2018-07-12 17:06:05.781 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:06:54.431 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Thu Jul 12 17:06:54 CST 2018]; root of context hierarchy
+2018-07-12 17:06:54.476 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:06:55.618 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-07-12 17:06:55.630 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-07-12 17:06:55.631 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-12 17:06:55.719 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-07-12 17:06:55.719 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1291 ms
+2018-07-12 17:06:55.853 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-12 17:06:55.855 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-12 17:06:55.856 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-12 17:06:55.856 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-12 17:06:55.856 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-12 17:06:56.139 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Thu Jul 12 17:06:54 CST 2018]; root of context hierarchy
+2018-07-12 17:06:56.198 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:06:56.199 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-07-12 17:06:56.200 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-07-12 17:06:56.200 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-07-12 17:06:56.200 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:06:56.203 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:06:56.204 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-12 17:06:56.226 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:06:56.227 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:06:56.258 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:06:56.717 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-07-12 17:06:56.733 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:06:56.745 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:06:57.239 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-07-12 17:06:57.251 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-07-12 17:06:57.253 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-07-12 17:06:57.254 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8088"]
+2018-07-12 17:06:57.263 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-07-12 17:07:00.649 [https-jsse-nio-8443-exec-7] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-12 17:07:00.649 [https-jsse-nio-8443-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-12 17:07:00.666 [https-jsse-nio-8443-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-07-12 17:07:33.224 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32115b28: startup date [Thu Jul 12 17:07:33 CST 2018]; root of context hierarchy
+2018-07-12 17:07:39.071 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:09:46.702 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@407a7f2a: startup date [Thu Jul 12 17:09:46 CST 2018]; root of context hierarchy
+2018-07-12 17:09:52.633 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:10:44.734 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-07-12 17:10:44.934 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-07-12 17:10:44.959 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-12 17:10:48.960 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-07-12 17:10:48.968 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 62323 ms
+2018-07-12 17:10:57.100 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-12 17:10:57.129 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-12 17:10:57.137 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-12 17:10:57.145 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-12 17:10:57.153 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-12 17:11:16.396 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@407a7f2a: startup date [Thu Jul 12 17:09:46 CST 2018]; root of context hierarchy
+2018-07-12 17:11:18.822 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:11:18.856 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-07-12 17:11:18.883 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-07-12 17:11:18.911 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-07-12 17:11:18.938 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:11:19.162 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:11:19.188 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-12 17:11:21.240 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:11:21.247 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:11:23.881 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:11:45.245 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-07-12 17:11:46.607 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:11:47.043 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:14:13.857 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Thu Jul 12 17:14:13 CST 2018]; root of context hierarchy
+2018-07-12 17:14:13.922 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:14:15.010 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-07-12 17:14:15.021 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-07-12 17:14:15.022 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-12 17:14:15.118 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-07-12 17:14:15.118 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1263 ms
+2018-07-12 17:14:15.262 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-12 17:14:15.264 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-12 17:14:15.265 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-12 17:14:15.265 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-12 17:14:15.265 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-12 17:14:15.554 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Thu Jul 12 17:14:13 CST 2018]; root of context hierarchy
+2018-07-12 17:14:15.610 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-07-12 17:14:15.611 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-07-12 17:14:15.612 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:14:15.612 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:14:15.613 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-07-12 17:14:15.615 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:14:15.616 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-12 17:14:15.638 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:14:15.638 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:14:15.667 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:14:16.035 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-07-12 17:14:16.052 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:14:16.063 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:14:16.490 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-07-12 17:14:16.500 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-07-12 17:14:16.501 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-07-12 17:14:16.502 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8088"]
+2018-07-12 17:14:16.511 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-07-12 17:14:27.480 [https-jsse-nio-8443-exec-9] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-12 17:14:27.480 [https-jsse-nio-8443-exec-9] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-12 17:14:27.498 [https-jsse-nio-8443-exec-9] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-07-12 17:15:06.974 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a01e23: startup date [Thu Jul 12 17:15:06 CST 2018]; root of context hierarchy
+2018-07-12 17:15:07.006 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:15:08.307 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https)
+2018-07-12 17:15:08.319 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-07-12 17:15:08.320 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-12 17:15:08.413 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-07-12 17:15:08.414 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1442 ms
+2018-07-12 17:15:08.543 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-12 17:15:08.547 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-12 17:15:08.548 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-12 17:15:08.548 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-12 17:15:08.548 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-12 17:15:08.852 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a01e23: startup date [Thu Jul 12 17:15:06 CST 2018]; root of context hierarchy
+2018-07-12 17:15:08.910 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:15:08.910 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-07-12 17:15:08.911 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-07-12 17:15:08.911 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-07-12 17:15:08.911 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:15:08.914 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:15:08.914 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-12 17:15:08.937 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:15:08.937 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:15:08.971 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:15:09.373 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-07-12 17:15:09.391 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:15:09.403 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:15:09.945 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-07-12 17:15:09.961 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8443 (https)
+2018-07-12 17:15:15.346 [https-jsse-nio-8443-exec-4] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-12 17:15:15.346 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-12 17:15:15.364 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-07-12 17:16:41.628 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72ade7e3: startup date [Thu Jul 12 17:16:41 CST 2018]; root of context hierarchy
+2018-07-12 17:16:41.698 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:16:43.019 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-07-12 17:16:43.031 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-07-12 17:16:43.033 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-12 17:16:43.144 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-07-12 17:16:43.145 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1522 ms
+2018-07-12 17:16:43.338 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-12 17:16:43.340 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-12 17:16:43.341 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-12 17:16:43.341 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-12 17:16:43.341 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-12 17:16:59.758 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72ade7e3: startup date [Thu Jul 12 17:16:41 CST 2018]; root of context hierarchy
+2018-07-12 17:17:02.078 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:17:02.123 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-07-12 17:17:02.147 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-07-12 17:17:02.172 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-07-12 17:17:02.197 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:17:02.401 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:17:02.429 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-12 17:17:04.200 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:17:04.207 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:17:06.560 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:21:48.352 [main] INFO  o.s.b.c.embedded.AnnotationConfigEmbeddedWebApplicationContext[583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Thu Jul 12 17:21:48 CST 2018]; root of context hierarchy
+2018-07-12 17:21:48.487 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[30] - HV000001: Hibernate Validator 5.3.6.Final
+2018-07-12 17:21:49.552 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[89] - Tomcat initialized with port(s): 8443 (https) 8088 (http)
+2018-07-12 17:21:49.565 [main] INFO  org.apache.catalina.core.StandardService[179] - Starting service [Tomcat]
+2018-07-12 17:21:49.567 [main] INFO  org.apache.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-07-12 17:21:49.662 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring embedded WebApplicationContext
+2018-07-12 17:21:49.662 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader[276] - Root WebApplicationContext: initialization completed in 1312 ms
+2018-07-12 17:21:49.807 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean[190] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-12 17:21:49.809 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-12 17:21:49.810 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-12 17:21:49.810 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-12 17:21:49.810 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean[258] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-12 17:21:50.075 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Thu Jul 12 17:21:48 CST 2018]; root of context hierarchy
+2018-07-12 17:21:50.135 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.home(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:21:50.136 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/queryMethodList]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList()
+2018-07-12 17:21:50.137 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/addMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.getMethodList1(org.springframework.ui.ModelMap)
+2018-07-12 17:21:50.137 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/**]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.httpsMock(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-07-12 17:21:50.137 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/updateMethod]}" onto java.lang.String jieshun.test.httpsMock.HttpsMock.updateResult(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:21:50.140 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-12 17:21:50.140 [main] INFO  o.s.w.servlet.mvc.method.annotation.RequestMappingHandlerMapping[543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-12 17:21:50.162 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:21:50.163 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:21:50.193 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-12 17:21:50.570 [main] INFO  o.springframework.jmx.export.annotation.AnnotationMBeanExporter[431] - Registering beans for JMX exposure on startup
+2018-07-12 17:21:50.586 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:21:50.597 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+2018-07-12 17:21:50.982 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-07-12 17:21:50.992 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-8088"]
+2018-07-12 17:21:50.993 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+2018-07-12 17:21:50.993 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler ["http-nio-8088"]
+2018-07-12 17:21:51.002 [main] INFO  o.s.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[201] - Tomcat started on port(s): 8443 (https) 8088 (http)
+2018-07-12 17:21:58.556 [https-jsse-nio-8443-exec-4] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-12 17:21:58.556 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[489] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-12 17:21:58.575 [https-jsse-nio-8443-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet[508] - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms

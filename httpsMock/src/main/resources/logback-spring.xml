@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<configuration debug="true">
+
+	<property name="LOG_HOME" value="./logs/" />
+	<property name="PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{64}[%line] - %msg%n" />
+ 
+  	<!-- 开发环境 -->
+    <springProfile name="dev">
+		<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+			<encoder>
+				<Pattern>${PATTERN}</Pattern>
+			</encoder>
+		</appender>
+		<logger name="com" level="DEBUG" additivity="false" />
+		<root level="debug" >
+	  	  <appender-ref ref="STDOUT" />
+		</root>
+	 </springProfile>
+   	<!--测试环境-->
+  	<springProfile name="test">
+		<!-- 控制台输出-->
+			<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+				<layout class="ch.qos.logback.classic.PatternLayout">
+					<Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{64}[%line] - %msg%n</Pattern>
+				</layout>
+			</appender>
+		  
+			<!-- 按照每天生成日志文件 -->  
+			<appender name="DATELOG" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+				
+				<File>${LOG_HOME}httpmock.log</File>
+				<filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+					<level>ERROR</level> 
+					<onMatch>DENY</onMatch> 
+				</filter>
+		        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+		            <FileNamePattern>${LOG_HOME}/httpmock.%i.bak</FileNamePattern>
+		            <MinIndex>1</MinIndex>
+		            <MaxIndex>30</MaxIndex>
+		        </rollingPolicy>
+		        <triggeringPolicy
+		            class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+		            <MaxFileSize>100MB</MaxFileSize>
+		        </triggeringPolicy>
+		        <layout class="ch.qos.logback.classic.PatternLayout">
+		            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{64}[%line] - %msg%n</Pattern>
+		        </layout>
+				
+			</appender>
+			 
+			<!-- 按照每天生成日志文件   错误信息 -->  
+			<appender name="DATELOG_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+			   
+				<File>${LOG_HOME}httpmock.error.log</File>
+				<filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+					<level>ERROR</level> 
+					<onMatch>ACCEPT</onMatch> 
+					<onMismatch>DENY</onMismatch> 
+				</filter>
+		        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+		            <FileNamePattern>${LOG_HOME}/httpmock.error.%i.bak</FileNamePattern>
+		            <MinIndex>1</MinIndex>
+		            <MaxIndex>30</MaxIndex>
+		        </rollingPolicy>
+		        <triggeringPolicy
+		            class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+		            <MaxFileSize>100MB</MaxFileSize>
+		        </triggeringPolicy>
+		        <layout class="ch.qos.logback.classic.PatternLayout">
+		            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{64}[%line] - %msg%n</Pattern>
+		        </layout> 
+			</appender> 
+			
+			
+			<logger name="com" level="info" additivity="false" >
+			    <appender-ref ref="STDOUT" />
+			    <appender-ref ref="DATELOG" />
+				<appender-ref ref="DATELOG_ERROR" />
+			</logger>
+	 </springProfile>
+	<!--生产环境-->
+	<springProfile name="prod">
+			<!-- 控制台输出-->
+			<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+				<layout class="ch.qos.logback.classic.PatternLayout">
+					<Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{64}[%line] - %msg%n</Pattern>
+				</layout>
+			</appender>
+		  
+			<!-- 按照每天生成日志文件 -->  
+			<appender name="DATELOG" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+				
+				<File>${LOG_HOME}httpmock.log</File>
+				<filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+					<level>ERROR</level> 
+					<onMatch>DENY</onMatch> 
+				</filter>
+		        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+		            <FileNamePattern>${LOG_HOME}/httpmock.%i.bak</FileNamePattern>
+		            <MinIndex>1</MinIndex>
+		            <MaxIndex>30</MaxIndex>
+		        </rollingPolicy>
+		        <triggeringPolicy
+		            class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+		            <MaxFileSize>100MB</MaxFileSize>
+		        </triggeringPolicy>
+		        <layout class="ch.qos.logback.classic.PatternLayout">
+		            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{64}[%line] - %msg%n</Pattern>
+		        </layout>
+				
+			</appender>
+			 
+			<!-- 按照每天生成日志文件   错误信息 -->  
+			<appender name="DATELOG_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+			   
+				<File>${LOG_HOME}httpmock.error.log</File>
+				<filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+					<level>ERROR</level> 
+					<onMatch>ACCEPT</onMatch> 
+					<onMismatch>DENY</onMismatch> 
+				</filter>
+		        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+		            <FileNamePattern>${LOG_HOME}/httpmock.error.%i.bak</FileNamePattern>
+		            <MinIndex>1</MinIndex>
+		            <MaxIndex>30</MaxIndex>
+		        </rollingPolicy>
+		        <triggeringPolicy
+		            class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+		            <MaxFileSize>100MB</MaxFileSize>
+		        </triggeringPolicy>
+		        <layout class="ch.qos.logback.classic.PatternLayout">
+		            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{64}[%line] - %msg%n</Pattern>
+		        </layout> 
+			</appender> 
+			<logger name="org" level="INFO" additivity="false" >
+			    <appender-ref ref="STDOUT" />
+			    <appender-ref ref="DATELOG" />
+				<appender-ref ref="DATELOG_ERROR" />
+			</logger>
+			
+			<logger name="com" level="INFO" additivity="false" >
+			    <appender-ref ref="STDOUT" />
+			    <appender-ref ref="DATELOG" />
+				<appender-ref ref="DATELOG_ERROR" />
+			</logger>
+	 </springProfile>
+</configuration>
